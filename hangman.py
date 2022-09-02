@@ -8,6 +8,7 @@ words = response.content.splitlines()
 word = str(random.choice(words))
 haslo = []
 
+#Wpisujemy luki w tabelke
 for l in word:
     if l == " ":
         haslo.append(" ")
