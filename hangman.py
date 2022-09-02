@@ -53,6 +53,7 @@ class Game():
                     haslo[counter+chwilowe-1] = letter
                     chwilowe += counter
                     counter = 0
+                    counter4 = 0
         
         print(*haslo)
                  
