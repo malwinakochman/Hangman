@@ -1,13 +1,12 @@
 import requests
 import random
 import string
-word_site = "https://www.mit.edu/~ecprice/wordlist.10000"
-haslo = []
 
 #word_site = "https://www.mit.edu/~ecprice/wordlist.10000"
 #response = requests.get(word_site)
 #words = response.content.splitlines()
 #word = random.choice(words)
+haslo = []
 word2 = "zmiana"
 
 for i in range(0, len(word2)):
@@ -53,7 +52,6 @@ class Game():
                     haslo[counter+chwilowe-1] = letter
                     chwilowe += counter
                     counter = 0
-                    counter4 = 0
         
         print(*haslo)
                  
