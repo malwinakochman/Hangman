@@ -3,15 +3,14 @@ import random
 
 word_site = "https://www.mit.edu/~ecprice/wordlist.10000"
 response = requests.get(word_site)
-words = response.content.splitlines()
-#word = str(random.choice(words))
-WORD = "zamiana"
+words = response.content.decode('utf-8').splitlines()
+WORD = str(random.choice(words))
 BLANK_SYMBOL = "_"
 WORDS_DELIMITER = " "
 LETTER_INPUT_MESSAGE = "Please enter letter\n"
 NOT_LETTER_MESSAGE = "It is sign."
 USED_LETTER_MESSAGE = "The letter was used."
-MAX_NUMBER_OF_TRIES = 10
+MAX_NUMBER_OF_TRIES = 15
 VICTORY_MESSAGE = f"You won the game. The word is {WORD}"
 GAME_OVER_MESSAGE = f"All tries have been used. Game over. The word is {WORD}"
 
